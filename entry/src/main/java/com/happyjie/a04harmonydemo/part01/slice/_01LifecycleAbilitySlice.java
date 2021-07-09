@@ -5,11 +5,14 @@ import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Button;
 import ohos.agp.components.Component;
+import ohos.agp.components.Text;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
 public class _01LifecycleAbilitySlice extends AbilitySlice {
     private static final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "_01LifecycleAbilitySlice");
+
+    private Text tv_result;
 
     @Override
     public void onStart(Intent intent) {
@@ -43,6 +46,28 @@ public class _01LifecycleAbilitySlice extends AbilitySlice {
                 present(new _01PassByValueAbilitySlice(), intent1);
             }
         });
+
+        Button btn_pass_return_value = (Button) findComponentById(ResourceTable.Id_btn_pass_return_value);
+        tv_result = (Text) findComponentById(ResourceTable.Id_tv_result);
+        btn_pass_return_value.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent1 = new Intent();
+                intent1.setParam("id", 27);
+                intent1.setParam("name", "李四的密码");
+                presentForResult(new _01PassByValueAbilitySlice(), intent1, 123);
+            }
+        });
+    }
+
+    @Override
+    protected void onResult(int requestCode, Intent resultIntent) {
+        super.onResult(requestCode, resultIntent);
+        HiLog.info(LABEL, "执行onResult方法------");
+        if (requestCode == 123 && resultIntent != null) {
+            String pwd = resultIntent.getStringParam("pwd");
+            tv_result.setText("返回的值：" + pwd);
+        }
     }
 
     @Override

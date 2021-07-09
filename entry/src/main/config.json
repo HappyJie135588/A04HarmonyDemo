@@ -13,7 +13,7 @@
     "name": ".MyApplication",
     "mainAbility": "com.happyjie.a04harmonydemo.MainAbility",
     "deviceType": [
-      "phone"
+      "phone","tablet"
     ],
     "distro": {
       "deliveryWithInstall": true,

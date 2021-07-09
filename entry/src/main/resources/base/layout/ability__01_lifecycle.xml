@@ -39,4 +39,20 @@
         ohos:text="传值"
         ohos:text_size="40fp"/>
 
+    <Button
+        ohos:id="$+id:btn_pass_return_value"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="传值并返回:"
+        ohos:text_size="40fp"/>
+    <Text
+        ohos:id="$+id:tv_result"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="返回的值："
+        ohos:text_size="40fp"/>
+
+
 </DirectionalLayout>
