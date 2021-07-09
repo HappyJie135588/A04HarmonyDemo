@@ -32,6 +32,17 @@ public class _01LifecycleAbilitySlice extends AbilitySlice {
                 new AbilitySliceHelper().startAbility(_01LifecycleAbilitySlice.this, ".part01._02NextAbility");
             }
         });
+
+        Button btn_pass_value = (Button) findComponentById(ResourceTable.Id_btn_pass_value);
+        btn_pass_value.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent1 = new Intent();
+                intent1.setParam("id", 17);
+                intent1.setParam("name", "张三");
+                present(new _01PassByValueAbilitySlice(), intent1);
+            }
+        });
     }
 
     @Override

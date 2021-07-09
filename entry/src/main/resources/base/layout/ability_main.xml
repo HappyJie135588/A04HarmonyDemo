@@ -10,7 +10,7 @@
         ohos:height="match_content"
         ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="生命周期"
+        ohos:text="生命周期和传值"
         ohos:text_size="40fp"/>
 
 </DirectionalLayout>

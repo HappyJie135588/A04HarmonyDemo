@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:alignment="center"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability__02_next"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="接收到的值是："
+        ohos:text_size="40fp"/>
+
+    <Text
+        ohos:id="$+id:tv_value"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability__02_next"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="XXX"
+        ohos:text_size="40fp"/>
+
+</DirectionalLayout>
