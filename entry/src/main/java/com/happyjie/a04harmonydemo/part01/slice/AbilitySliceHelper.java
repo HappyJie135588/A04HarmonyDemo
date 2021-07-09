@@ -1,4 +1,4 @@
-package com.happyjie.a04harmonydemo.slice;
+package com.happyjie.a04harmonydemo.part01.slice;
 
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;

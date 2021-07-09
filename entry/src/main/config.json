@@ -43,7 +43,7 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.happyjie.a04harmonydemo._01LifecycleAbility",
+        "name": "com.happyjie.a04harmonydemo.part01._01LifecycleAbility",
         "icon": "$media:icon",
         "description": "$string:_01lifecycleability_description",
         "label": "$string:entry__01LifecycleAbility",
@@ -52,7 +52,7 @@
       },
       {
         "orientation": "unspecified",
-        "name": "com.happyjie.a04harmonydemo._02NextAbility",
+        "name": "com.happyjie.a04harmonydemo.part01._02NextAbility",
         "icon": "$media:icon",
         "description": "$string:_02nextability_description",
         "label": "$string:entry__02NextAbility",

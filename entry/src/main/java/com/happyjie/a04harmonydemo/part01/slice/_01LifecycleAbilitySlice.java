@@ -1,4 +1,4 @@
-package com.happyjie.a04harmonydemo.slice;
+package com.happyjie.a04harmonydemo.part01.slice;
 
 import com.happyjie.a04harmonydemo.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
@@ -29,7 +29,7 @@ public class _01LifecycleAbilitySlice extends AbilitySlice {
         btn_topage.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                new AbilitySliceHelper().startAbility(_01LifecycleAbilitySlice.this, "._02NextAbility");
+                new AbilitySliceHelper().startAbility(_01LifecycleAbilitySlice.this, ".part01._02NextAbility");
             }
         });
     }

@@ -1,9 +1,8 @@
-package com.happyjie.a04harmonydemo.slice;
+package com.happyjie.a04harmonydemo.part01.slice;
 
 import com.happyjie.a04harmonydemo.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
-import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.Component;
 
@@ -17,7 +16,7 @@ public class MainAbilitySlice extends AbilitySlice {
         btn_lifecycle.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                new AbilitySliceHelper().startAbility(MainAbilitySlice.this, "._01LifecycleAbility");
+                new AbilitySliceHelper().startAbility(MainAbilitySlice.this, ".part01._01LifecycleAbility");
             }
         });
     }
