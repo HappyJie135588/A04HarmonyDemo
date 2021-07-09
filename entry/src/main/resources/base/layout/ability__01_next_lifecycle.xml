@@ -12,7 +12,7 @@
         ohos:width="match_content"
         ohos:background_element="$graphic:background_ability__02_next"
         ohos:layout_alignment="horizontal_center"
-        ohos:text="第二个Page中的Slice"
+        ohos:text="第二个Slice"
         ohos:text_size="40fp"
         />
 

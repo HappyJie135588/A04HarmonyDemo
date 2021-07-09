@@ -12,7 +12,7 @@
         ohos:background_element="$graphic:background_ability__01_lifecycle"
         ohos:layout_alignment="horizontal_center"
         ohos:text="第一个Slice"
-        ohos:text_size="40vp"
+        ohos:text_size="40fp"
         />
 
     <Button
@@ -21,7 +21,7 @@
         ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"
         ohos:text="跳转下一个Slice"
-        ohos:text_size="40vp"/>
+        ohos:text_size="40fp"/>
 
     <Button
         ohos:id="$+id:btn_topage"
@@ -29,6 +29,6 @@
         ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"
         ohos:text="跳转下一个Page"
-        ohos:text_size="40vp"/>
+        ohos:text_size="40fp"/>
 
 </DirectionalLayout>

@@ -11,6 +11,6 @@
         ohos:width="match_content"
         ohos:layout_alignment="horizontal_center"
         ohos:text="生命周期"
-        ohos:text_size="40vp"/>
+        ohos:text_size="40fp"/>
 
 </DirectionalLayout>

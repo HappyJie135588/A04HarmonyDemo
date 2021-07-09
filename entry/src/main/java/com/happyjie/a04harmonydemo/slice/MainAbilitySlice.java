@@ -12,28 +12,19 @@ public class MainAbilitySlice extends AbilitySlice {
     public void onStart(Intent intent) {
         super.onStart(intent);
         super.setUIContent(ResourceTable.Layout_ability_main);
+
+        Button btn_lifecycle = (Button) findComponentById(ResourceTable.Id_btn_lifecycle);
+        btn_lifecycle.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                new AbilitySliceHelper().startAbility(MainAbilitySlice.this, "._01LifecycleAbility");
+            }
+        });
     }
 
     @Override
     public void onActive() {
         super.onActive();
-        Button btn_lifecycle = (Button) findComponentById(ResourceTable.Id_btn_lifecycle);
-        btn_lifecycle.setClickedListener(new Component.ClickedListener() {
-            @Override
-            public void onClick(Component component) {
-                startAbility("._01LifecycleAbility");
-            }
-        });
-    }
-
-    private void startAbility(String abilityName) {
-        Intent intent = new Intent();
-        Operation operation = new Intent.OperationBuilder()
-                .withBundleName("com.happyjie.a04harmonydemo")
-                .withAbilityName(abilityName)
-                .build();
-        intent.setOperation(operation);
-        startAbility(intent);
     }
 
     @Override

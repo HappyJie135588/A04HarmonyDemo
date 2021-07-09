@@ -1,20 +1,19 @@
-package com.happyjie.a04harmonydemo;
+package com.happyjie.a04harmonydemo.slice;
 
-import com.happyjie.a04harmonydemo.slice._01LifecycleAbilitySlice;
-import ohos.aafwk.ability.Ability;
+import com.happyjie.a04harmonydemo.ResourceTable;
+import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
-import ohos.agp.components.Button;
 import ohos.hiviewdfx.HiLog;
 import ohos.hiviewdfx.HiLogLabel;
 
-public class _01LifecycleAbility extends Ability {
-    private static final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "_01LifecycleAbility");
+public class _01NextLifecycleAbilitySlice extends AbilitySlice {
+    private static final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "_01NextLifecycleAbilitySlice");
 
     @Override
-    public void onStart(Intent intent) {
+    protected void onStart(Intent intent) {
         super.onStart(intent);
         HiLog.info(LABEL, "执行onStart方法------");
-        super.setMainRoute(_01LifecycleAbilitySlice.class.getName());
+        super.setUIContent(ResourceTable.Layout_ability__01_next_lifecycle);
     }
 
     @Override
