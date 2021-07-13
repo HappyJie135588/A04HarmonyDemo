@@ -65,6 +65,16 @@
         "label": "$string:entry__02NextAbility",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "permissions": [
+          "com.happyjie.a04harmonydemo.DataAbilityShellProvider.PROVIDER"
+        ],
+        "name": "com.happyjie.a04harmonydemo._03DataAbility",
+        "icon": "$media:icon",
+        "description": "$string:_03dataability_description",
+        "type": "data",
+        "uri": "dataability://com.happyjie.a04harmonydemo._03DataAbility"
       }
     ]
   }
