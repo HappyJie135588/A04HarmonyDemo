@@ -53,6 +53,13 @@
         ohos:layout_alignment="horizontal_center"
         ohos:text="返回的值："
         ohos:text_size="40fp"/>
+    <Button
+        ohos:id="$+id:btn_to_other_slice"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="跳转到其他的Slice"
+        ohos:text_size="40fp"/>
 
 
 </DirectionalLayout>

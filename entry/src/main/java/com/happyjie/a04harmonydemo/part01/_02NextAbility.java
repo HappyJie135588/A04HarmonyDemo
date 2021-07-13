@@ -1,6 +1,7 @@
 package com.happyjie.a04harmonydemo.part01;
 
 import com.happyjie.a04harmonydemo.part01.slice._02NextAbilitySlice;
+import com.happyjie.a04harmonydemo.part01.slice._02NextOtherAbilitySlice;
 import ohos.aafwk.ability.Ability;
 import ohos.aafwk.content.Intent;
 import ohos.hiviewdfx.HiLog;
@@ -14,6 +15,7 @@ public class _02NextAbility extends Ability {
         super.onStart(intent);
         HiLog.info(LABEL, "执行onStart方法------");
         super.setMainRoute(_02NextAbilitySlice.class.getName());
+        addActionRoute("action.other", _02NextOtherAbilitySlice.class.getName());
     }
 
     @Override

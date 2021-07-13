@@ -13,7 +13,7 @@
     "name": ".MyApplication",
     "mainAbility": "com.happyjie.a04harmonydemo.MainAbility",
     "deviceType": [
-      "phone","tablet"
+      "phone"
     ],
     "distro": {
       "deliveryWithInstall": true,
@@ -51,6 +51,13 @@
         "launchType": "standard"
       },
       {
+        "skills": [
+          {
+            "actions": [
+              "action.other"
+            ]
+          }
+        ],
         "orientation": "unspecified",
         "name": "com.happyjie.a04harmonydemo.part01._02NextAbility",
         "icon": "$media:icon",

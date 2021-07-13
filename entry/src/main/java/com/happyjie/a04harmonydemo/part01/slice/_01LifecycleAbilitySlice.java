@@ -3,6 +3,7 @@ package com.happyjie.a04harmonydemo.part01.slice;
 import com.happyjie.a04harmonydemo.ResourceTable;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
+import ohos.aafwk.content.Operation;
 import ohos.agp.components.Button;
 import ohos.agp.components.Component;
 import ohos.agp.components.Text;
@@ -40,10 +41,10 @@ public class _01LifecycleAbilitySlice extends AbilitySlice {
         btn_pass_value.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                Intent intent1 = new Intent();
-                intent1.setParam("id", 17);
-                intent1.setParam("name", "张三");
-                present(new _01PassByValueAbilitySlice(), intent1);
+                Intent intent = new Intent();
+                intent.setParam("id", 17);
+                intent.setParam("name", "张三");
+                present(new _01PassByValueAbilitySlice(), intent);
             }
         });
 
@@ -52,10 +53,23 @@ public class _01LifecycleAbilitySlice extends AbilitySlice {
         btn_pass_return_value.setClickedListener(new Component.ClickedListener() {
             @Override
             public void onClick(Component component) {
-                Intent intent1 = new Intent();
-                intent1.setParam("id", 27);
-                intent1.setParam("name", "李四的密码");
-                presentForResult(new _01PassByValueAbilitySlice(), intent1, 123);
+                Intent intent = new Intent();
+                intent.setParam("id", 27);
+                intent.setParam("name", "李四的密码");
+                presentForResult(new _01PassByValueAbilitySlice(), intent, 123);
+            }
+        });
+
+        Button btn_to_other_slice = (Button) findComponentById(ResourceTable.Id_btn_to_other_slice);
+        btn_to_other_slice.setClickedListener(new Component.ClickedListener() {
+            @Override
+            public void onClick(Component component) {
+                Intent intent = new Intent();
+                Operation operation = new Intent.OperationBuilder()
+                        .withAction("action.other")
+                        .build();
+                intent.setOperation(operation);
+                startAbility(intent);
             }
         });
     }

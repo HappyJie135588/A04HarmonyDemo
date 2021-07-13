@@ -35,6 +35,10 @@
     {
       "name": "entry__02NextAbility",
       "value": "entry__02NextAbility"
+    },
+    {
+      "name": "_03dataability_description",
+      "value": "hap sample empty provider"
     }
   ]
 }
